@@ -342,6 +342,8 @@ kill -9 <process_id>
 
 ----------------------------------------
 
+## Symlink & Hardlink
+
 Symlink và hardlink khác nhau về cách trỏ tới dữ liệu:
 
 Symlink (Symbolic Link):
