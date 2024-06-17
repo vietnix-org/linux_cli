@@ -317,3 +317,51 @@ command > output_file
 command > all_output_file 2>&1
 ```
 
+
+------------------------------------
+
+
+## Các dạng cơ bản của kill process
+
+## lệnh kill: yêu cầu dừng một process cụ thể (dựa trên process id) 
+## lệnh killall: yêu cầu tất cả các process có tên cụ thể dừng lại
+```bash
+killall <process_name>
+```
+
+## lệnh pkill: yêu cầu dừng các processes thoả mãn các tiêu chí tìm kiếm khác nhau, như là tên hoặc thuộc tính
+```bash
+pkill <options> <pattern>
+```
+Sử dụng pkill lệnh:
+
+## lệnh kill -9: ép process dừng ngay lập tức
+```bash
+kill -9 <process_id>
+```
+
+----------------------------------------
+
+Symlink và hardlink khác nhau về cách trỏ tới dữ liệu:
+
+Symlink (Symbolic Link):
+
+Trỏ tới một tập tin/thư mục khác.
+Nếu tập tin gốc bị xóa, symlink cũng die
+Có thể trỏ tới tập tin/thư mục trên hệ thống tập tin khác.
+Dùng khi cần tạo shortcut hay alias linh động.
+
+Hardlink (Hard Link):
+
+Trỏ trực tiếp tới dữ liệu của tập tin gốc.
+Nếu tập tin gốc bị xóa, dữ liệu vẫn truy cập được qua hardlink.
+Không thể trỏ tới tập tin/thư mục trên hệ thống tập tin khác.
+Dùng để tiết kiệm không gian và tạo nhiều điểm truy cập tới cùng dữ liệu.
+
+Khi nào dùng:
+
+Symlink: Khi cần liên kết linh động, shortcut, hoặc trỏ tới hệ thống tập tin khác.
+Hardlink: Khi cần nhiều điểm truy cập tới cùng dữ liệu và tiết kiệm không gian lưu trữ.
+
+----------------------------------------------------------------
+
