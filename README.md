@@ -367,3 +367,15 @@ Hardlink: Khi cần nhiều điểm truy cập tới cùng dữ liệu và tiế
 
 ----------------------------------------------------------------
 
+## SCP & RSync:
+
+giống: đều dùng mã hoá SSH để truyền dữ liệu an toàn 
+khác:
+
+### SCP:
+
+Đơn giản, dễ dùng, truyền các tập tin lớn nhanh, nên dùng trong các trường hợp chỉ sao chép 1 lần
+
+### Rsync:
+
+Thiên về tính hiệu quả, linh hoạt vì chỉ truyền những phần thay đổi; cú pháp phức tạp nhưng có độ tuỳ biến cao hơn; nên dùng để đồng bộ dữ liệu có tính thay đổi nhiều lần
